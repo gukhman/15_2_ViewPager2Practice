@@ -17,6 +17,7 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_login, container, false)
+
         val loginField = view.findViewById<EditText>(R.id.loginEditText)
         val passwordField = view.findViewById<EditText>(R.id.passwordEditText)
         val loginButton = view.findViewById<Button>(R.id.loginButton)
@@ -24,7 +25,7 @@ class LoginFragment : Fragment() {
         loginButton.setOnClickListener {
             val login = loginField.text.toString()
             val password = passwordField.text.toString()
-            val sharedPreferences = activity?.getSharedPreferences("MyBankPrefs", Context.MODE_PRIVATE)
+            val sharedPreferences = activity?.getSharedPreferences("auth", Context.MODE_PRIVATE)
             val registeredLogin = sharedPreferences?.getString("login", "")
             val registeredPassword = sharedPreferences?.getString("password", "")
 

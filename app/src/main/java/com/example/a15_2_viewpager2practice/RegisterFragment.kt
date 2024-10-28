@@ -23,7 +23,8 @@ class RegisterFragment : Fragment() {
         registerButton.setOnClickListener {
             val login = loginField.text.toString()
             val password = passwordField.text.toString()
-            val sharedPreferences = activity?.getSharedPreferences("MyBankPrefs", Context.MODE_PRIVATE)
+
+            val sharedPreferences = activity?.getSharedPreferences("auth", Context.MODE_PRIVATE)
             sharedPreferences?.edit()?.apply {
                 putString("login", login)
                 putString("password", password)

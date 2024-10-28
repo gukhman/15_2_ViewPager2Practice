@@ -2,7 +2,13 @@
     <string name="app_name">15_2_ViewPager2Practice</string>
     <string name="exit">Выход</string>
     <string name="toolbarTitle">Мой Банк</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Hello">Приветствую, хозяин!</string>
+    <string name="loginEditText_hint">Логин</string>
+    <string name="passwordEditText_hint">Пароль</string>
+    <string name="loginButton_text">Войти</string>
+    <string name="registerButton_text">Зарегистрироваться</string>
+    <string name="titleTextView_hint">Заголовок</string>
+    <string name="descriptionTextView_hint">Описание</string>
+    <string name="startButton_text">Начать</string>
 
 </resources>

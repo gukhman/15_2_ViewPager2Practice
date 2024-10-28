@@ -1,9 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Базовая тема приложения -->
     <style name="Base.Theme._15_2_ViewPager2Practice" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Цвет для тулбара -->
+        <item name="colorPrimary">@color/orange</item>
+
+        <!-- Применяем кастомный стиль для всех MaterialButtons -->
+        <item name="materialButtonStyle">@style/CustomMaterialButtonStyle</item>
     </style>
 
+    <!-- Основная тема -->
     <style name="Theme._15_2_ViewPager2Practice" parent="Base.Theme._15_2_ViewPager2Practice" />
+
+    <!-- Кастомный стиль для MaterialButton -->
+    <style name="CustomMaterialButtonStyle" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/darkRed</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

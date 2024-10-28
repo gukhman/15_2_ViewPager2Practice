@@ -3,38 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/defPadding"
-    android:gravity="center">
+    android:padding="@dimen/defPadding">
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/bigMargin"
+        android:hint="@string/titleTextView_hint"
+        android:textAlignment="center"
         android:textSize="@dimen/textSize"
-        android:textStyle="bold"
-        android:text="Заголовок" />
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/bank_image_1"
-        android:layout_marginTop="@dimen/defMargin" />
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/defMargin"
+        android:src="@drawable/bank_image_1" />
 
     <TextView
         android:id="@+id/descriptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Описание"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/defMargin"
-        android:textSize="@dimen/textSize"
-        android:gravity="center_horizontal" />
+        android:hint="@string/descriptionTextView_hint"
+        android:textAlignment="center"
+        android:textSize="@dimen/textSize" />
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Начать"
-        android:visibility="gone"
-        android:layout_marginTop="@dimen/defMargin" />
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/defMargin"
+        android:text="@string/startButton_text"
+        android:visibility="gone" />
 </LinearLayout>

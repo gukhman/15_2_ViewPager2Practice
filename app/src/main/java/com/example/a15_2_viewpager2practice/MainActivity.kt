@@ -18,8 +18,16 @@ class MainActivity : BaseActivity() {
         viewPager = findViewById(R.id.viewPager)
 
         val slides = listOf(
-            Slide("Добро пожаловать!", "Информация о нашем банке.", R.drawable.bank_image_1),
-            Slide("Удобные функции", "Оплачивайте счета и переводите деньги.", R.drawable.bank_image_2),
+            Slide(
+                "Добро пожаловать!",
+                "Мы - надежный и инновационный банк, созданный для удобства клиентов",
+                R.drawable.bank_image_1
+            ),
+            Slide(
+                "Потрясающий опыт использования банковских услуг",
+                "Оплачивайте счета и переводите средства с минимальной комиссией!",
+                R.drawable.bank_image_2
+            ),
             Slide("Начнем работу!", "Готовы зарегистрироваться?", R.drawable.bank_image_3)
         )
 
