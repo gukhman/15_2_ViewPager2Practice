@@ -1,0 +1,24 @@
+<!-- res/layout/fragment_main_bank.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/defPadding"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать в Мой Банк!"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Здесь будет информация о вашем аккаунте."
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/defMargin"
+        android:gravity="center" />
+</LinearLayout>
